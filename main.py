@@ -5,7 +5,7 @@ def count_carbons(smiles):
     return cnt
 
 
-def wrong_count_nitorgens(smiles):
+def wrong_count_nitrogens(smiles):
     cnt = 0
     cnt = smiles.count("N")
     cnt = smiles.count("n")
