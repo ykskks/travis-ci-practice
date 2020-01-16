@@ -11,11 +11,11 @@ def test_count_carbons():
     assert carbons_in_nicotine == 10
 
 
-def test_count_nitrogens():
+def test_wrong_count_nitrogens():
     glucose = "OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@@H](O)"
     nicotine = "CN1CCC[C@H]1c2cccnc2"
-    nitrogens_in_glucose = main.count_nitrogens(glucose)
-    nitrogens_in_nicotine = main.count_nitrogens(nicotine)
+    nitrogens_in_glucose = main.wrong_count_nitrogens(glucose)
+    nitrogens_in_nicotine = main.wrong_count_nitrogens(nicotine)
     assert nitrogens_in_glucose == 0
     assert nitrogens_in_nicotine == 2
 
